@@ -1,4 +1,7 @@
 
+//global variables also possible
+String country = "PAKISTAN";
+
 void main()
 {
   //primitive datatypes built-in supported by dart
