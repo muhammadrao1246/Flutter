@@ -8,8 +8,25 @@ typedef HashMap<T, K> = Map<T, K>;
 typedef Integer = int;
 typedef FloatValue = double;
 
+//for declaring functions alises
+typedef String ALI(String a, String b);
+
+String concat(String a, String b)
+{
+  return a+b;
+}
+
 void main() 
 {
+  //Using function aliases
+  ALI fullname;
+  fullname = concat;
+
+  String first_name = "Ali", last_name = "Ahmed";
+  
+  print(fullname(first_name, last_name));
+
+
   ArrayList hi = [0,231,21,"fsfa"]; //not type safe 
   ArrayList<String> names= ["M","H"]; //type safe list
   ArrayList an_array = List.filled(3, 0, growable: false); //conventional array
