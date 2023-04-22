@@ -4,6 +4,17 @@ void main()
 {
   List<int> numbers = [5, 4, 3, 2, 1];
 
+  //MAP utility for traversing each items accepts a callback
+  print("TRAVERSING A LIST ITEMS WITH MAP UTILITY FUNCTION");
+  
+  print (numbers.map((e) => e));
+
+  //WHERE utility for traversing filtered items accepts a callback
+  print("TRAVERSING A LIST ITEMS WITH WHERE UTILITY FUNCTION");
+  
+  print (numbers.where((element) => element > 3));
+
+
   //for loop
   print("FOR LOOP TRAVERSING A LIST ITEMS");
   for (var i = 0; i < numbers.length; i++) {
